@@ -1,0 +1,20 @@
+mode: "llm"     # llm or classical
+
+data:
+  filepath: data/3Q24-SUPP-ForWeb.xlsx
+
+  xlsx:
+    sheet_name: "Summary"
+    header: [0, 1, 2]
+    skiprows: 5
+
+  values_to_extract:
+    - Total revenues, net of interest expense
+    - Citigroup's net income (loss)
+    - Book value per share
+    - Tangible book value per share
+    - Common Equity Tier 1 (CET1) Capital ratio
+
+
+models:
+  name: mistralai/Mistral-7B-Instruct-v0.3

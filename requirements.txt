@@ -1,0 +1,8 @@
+camelot-py
+langchain-openai
+langchain-community
+unstructured
+PyMuPDF
+networkx
+omegaconf
+opencv-python
